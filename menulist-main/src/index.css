@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #aff8ff;
+}
+
+h1 {
+    font-family: 'Bonheur Royale', cursive;
+    @apply text-4xl font-bold text-center my-8 text-green-800;
+}
+
+.navs {
+    @apply flex justify-center items-center mb-10 hover:text-green-800 font-bold text-lg;
+}
+.menu-list-container {
+    @apply ml-auto mr-10 mt-24;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    
+}
+
+.menu-item {
+    width: calc(50% - 40px);
+    margin: 10px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.meal-container {
+    @apply grid gap-10 grid-cols-1 md:grid-cols-2;
+    align-items: start;
+}
+
+.img {
+    @apply h-64 w-full object-cover rounded-3xl border-4 border-green-800;
+    
+}
+.img:hover{
+    
+    transform: scale(1.1);
+}
+.para-menu {
+    color: #61798e;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+    @apply ml-3;
+}
+
+.title-price {
+    @apply ml-3 flex justify-between text-green-800 font-bold;
+}
+
+
+
+.small-button {
+    @apply inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded border border-green-800;
+    transition: background-color 0.3s;
+}
+
+.small-button:hover {
+    background-color: #aca853;
+}
+.small-button1 {
+    @apply inline-block bg-red-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded border border-green-800;
+    transition: background-color 0.3s;
+}
+
+.small-button1:hover {
+    background-color: #df0d14;
+}
+.my-div {
+    background-color: rgb(194, 194, 213);
+    color: black; 
+    padding: 20px;
+    transition: background-color 0.5s; 
+}
+
+.my-div:hover {
+    background-color: rgb(221, 186, 234); 
+}
+
+.out-of-stock-container {
+    position: relative;
+}
+
+.oos-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30;
+    height: 30;
+}
+.oos-img:hover {
+    transform: rotate(5deg);
+}

@@ -1,0 +1,336 @@
+.heroSection
+  background-color: #78c4bd
+  padding: 20px
+
+.container
+  max-width: 1200px
+  margin: 0 auto
+  padding: 20px
+
+.banner
+  display: flex
+  flex-direction: column
+  align-items: flex-start /* Align items to the left */
+  margin-bottom: 20px
+
+.banner1
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  margin-bottom: 20px
+  width: 300px /* Set a fixed width for the container */
+  position: absolute
+  top: 150px /* Move 40px down from the top */
+  right: 50px /* Move 30px to the left from the right */
+
+.banner3
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  margin-bottom: 20px
+  width: 300px
+  position: absolute
+  top: 750px /* Move 40px down from the top */
+  right: 20px /* Move 30px to the left from the right */
+
+.combined_boxes
+  display: flex
+  align-items: center
+
+.imageBox
+  flex: 1
+  margin-right: 20px
+
+.imageBox1
+  flex: 1
+  margin-right: 20px
+  position: relative
+
+.textAndLogo
+  flex: 1
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.textWithSvg
+  display: flex
+  align-items: center
+  margin-bottom: 10px
+
+.logo
+  width: 100px
+  margin-top: 10px
+
+.dishes_title
+  color: #ff6347
+  margin-left: auto
+  margin-top: 40px
+
+.about
+  display: flex
+  min-height: 100vh
+  justify-content: center
+  align-items: center
+  background-color: #f9fbf2
+  padding-left: 20px /* Add padding to prevent content from being cut off */
+
+.about .container
+  max-width: 1500px
+  width: 100%
+  display: flex
+
+.about .container .banner
+  flex: 1
+  display: flex
+  flex-direction: column
+  justify-content: space-evenly
+  padding-right: 20px 
+
+.about .container .banner img
+  width: 100%
+
+.heading
+  font-weight: 200
+  font-size: 4rem
+  color: #111
+
+.about .container .banner .mid
+  width: 65%
+  font-size: 18px
+  font-weight: 300
+  letter-spacing: 2px
+  word-spacing: 5px
+
+.about .container .banner .top p
+  font-size: 18px
+  font-weight: 400
+  color: #111
+  letter-spacing: 2px
+
+.about .container .banner a
+  border: 1px solid black
+  padding: 8px 28px
+  border-radius: 30px
+  display: flex
+  width: fit-content
+  align-items: center
+  justify-content: center
+  text-decoration: none
+  font-size: 15px
+  color: #111
+
+.about .container .banner a span
+  margin-left: 1rem
+  padding: 6px
+  background: #111
+  border-radius: 100%
+  color: #fff
+
+.about .container .banner a:hover
+  color: #fff
+
+.qualities
+  display: flex
+  height: fit-content
+  padding: 75px 20px
+  justify-content: center
+  background: #bd97ac
+  align-items: center
+
+.qualities .container
+  min-width: 1500px
+  max-width: 1500px
+  display: flex
+  flex-wrap: wrap
+
+.qualities .container .card
+  flex: 1
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  padding: 0 100px
+
+.qualities .container .card img
+  margin-bottom: 25px
+
+.qualities .container .card .title
+  font-size: 1.8rem
+  font-weight: 700
+  color: #111
+  margin-bottom: 12px
+
+.qualities .container .card .description
+  font-size: 18px
+  color: #333
+  font-weight: 300
+
+@media (max-width: 1520px)
+  .qualities .container
+    min-width: 100%
+    padding: 30px 20px
+
+@media (max-width: 1190px)
+  .qualities .container .card .title
+    font-size: 1.4rem
+
+@media (max-width: 1080px)
+  .qualities .container .card
+    padding: 0 30px
+  .qualities .container
+    padding: 0
+
+@media (max-width: 635px)
+  .qualities .container .card
+    flex: none
+    width: 400px
+    padding: 0
+    margin: 0 auto
+    margin-bottom: 40px
+
+@media (max-width: 485px)
+  .qualities .container .card
+    width: 100%
+
+/* ############################### */
+.qualities1
+  display: flex
+  height: fit-content
+  padding: 75px 20px
+  justify-content: center
+  align-items: center
+  background-color: #6be3b5
+
+.qualities1 .container
+  min-width: 1500px
+  max-width: 1500px
+  display: flex
+  flex-wrap: wrap
+  background-color: #ffffff 
+  padding: 20px 
+  border-radius: 10px 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) 
+
+.qualities1 .container .card
+  flex: 1
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  padding: 0 100px
+
+.qualities1 .container .card img
+  margin-bottom: 25px
+
+.qualities1 .container .card .title
+  font-size: 1.8rem
+  font-weight: 700
+  color: #111
+  margin-bottom: 12px
+
+.qualities1 .container .card .description
+  font-size: 18px
+  color: #a38686
+  font-weight: 300
+
+@media (max-width: 1520px)
+  .qualities1 .container
+    min-width: 100%
+    padding: 30px 20px
+
+@media (max-width: 1190px)
+  .qualities1 .container .card .title
+    font-size: 1.4rem
+
+@media (max-width: 1080px)
+  .qualities1 .container .card
+    padding: 0 30px
+  .qualities1 .container
+    padding: 0
+
+@media (max-width: 635px)
+  .qualities1 .container .card
+    flex: none
+    width: 400px
+    padding: 0
+    margin: 0 auto
+    margin-bottom: 40px
+
+@media (max-width: 485px)
+  .qualities1 .container .card
+    width: 100%
+
+.hr
+  width: 100%
+  border-bottom: 1px double #1a0303 
+  margin-bottom: 20px
+
+.hel
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  color: white
+  background-color: black
+
+.tem1
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  width: 100%
+  margin-bottom: 20px
+
+.tem2,
+.tem3
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  margin-bottom: 20px
+
+.left
+  font-weight: bold
+
+.right
+  text-align: right
+
+p
+  margin: 0
+
+.explore-menu-button
+  border: 1px solid black
+  padding: 8px 28px
+  border-radius: 30px
+  width: fit-content
+  font-size: 15px
+  color: #f2f2f2
+  text-align: right
+  background-color: #111
+
+.explore-menu-button:hover
+  color: #0e0f0d
+  background-color: white
+
+.pop 
+  display: flex
+  gap: 10px
+  width: calc(100vw - 20px)
+
+
+.pop .dish 
+  text-align: center
+
+.pop img 
+  flex-shrink: 0
+  width: calc((100vw - 40px) / 4)
+  max-height: 70%
+  &:hover
+    transform: scale(1.1)
+
+
+.title 
+  font-weight: bold
+  color: #333
+  margin-top: 5px 
+  &:hover
+    transform: scale(1.1)
